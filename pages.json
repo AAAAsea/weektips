@@ -1,0 +1,246 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+		 
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "WeekTips",
+				"enablePullDownRefresh": false,
+				"softinputMode": "adjustPan"
+				// "softinputMode": "adjustResize" //防止键盘弹起时无法定位到上方的文字 adjustResize
+			}
+		}
+	    ,{
+            "path" : "pages/mine/about/me/me",
+            "style" :                                                                                 
+            {
+                "navigationBarTitleText": "作者",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+        }
+		// ,{
+  //           "path" : "pages/index/cloud/cloud",
+  //           "style" :                                                                                
+  //           {
+  //               "navigationBarTitleText": "云",
+  //               "enablePullDownRefresh": false
+  //           }
+  //       }        
+        ,{
+            "path" : "pages/mine/about/about",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "关于",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/about/description/description",
+            "style" :                                                                                    
+            {
+				
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/about/feedback/feedback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/about/questions/questions",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/more/more",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "更多",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        },
+		{
+			"path" : "pages/more/template/template",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "模板编辑",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {  
+					"subNVues":[{  
+						"id": "popup", // 唯一标识  
+						"path": "pages/more/template/subNVue/popup", // 页面路径  
+						"type": "popup",  //这里不需要 
+						"style": {  
+							"position": "absolute",  
+							"top":"200rpx",
+							"bottom":"10rpx",
+							"left":"100rpx",
+							"right":"100rpx",
+							"background": "transparent"  
+						}  
+					}]  
+				}  
+			}
+		}
+        ,{
+            "path" : "pages/more/clock/clock",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/mine/about/settings/settings",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom",
+		        "navigationBarTitleText": "设置",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/mine/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "账户",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/more/note/note",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/more/note/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        },{
+            "path" : "pages/more/template/subNVue/popup",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/more/countdown/countdown",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/more/countdown/edit/edit",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		// "navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "WeekTips",
+		// // "navigationBarBackgroundColor": "#F8F8F8",
+		// "backgroundColor": "#ffffff",
+		// "app-plus": {
+		// 	"background": "#ffffff",
+		// 	"animationAlphaBGColor": "#ffffff",
+		// 	"backgroundColor": "#ffffff"
+		// }
+		
+	},
+	"tabBar":{
+		"height":"50px",//默认就是50px
+		"selectedColor":"#3FA9E1",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"计划",
+				"iconPath":"static/pics/note.png",
+				"selectedIconPath":"static/pics/note_active.png"
+			},
+			{
+				"pagePath":"pages/more/more",
+				"text":"更多",
+				"iconPath":"static/pics/more.png",
+				"selectedIconPath":"static/pics/more_active.png"
+			},
+			{
+				"pagePath":"pages/mine/mine",
+				"text":"我的",
+				"iconPath":"static/pics/me.png",
+				"selectedIconPath":"static/pics/me_active.png"
+			}
+		]
+	}
+	// "easycom": {
+	//   "autoscan": true,
+	//   "custom": {
+	//     "^uni-(.*)": "@/components/uni-$1.vue", // 匹配components目录内的vue文件
+	//     "^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue" // 匹配node_modules内的vue文件
+	//   }
+	// }
+}

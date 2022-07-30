@@ -1,0 +1,26 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"account": {
+			"descrition": "账户",
+			"bsonType": "string"
+		},
+		"passwd": {
+			"descrition": "密码",
+			"bsonType": "string"
+		},
+		"record": {
+			"basonType": "object"
+		}
+	}
+}

@@ -1,0 +1,59 @@
+<template>
+	<div class="main">
+		<text class="title">😜</text>
+		<text  class="text">这里是模板界面
+		适合写下每周一、周二...
+		都要做的事情
+		会自动添加到首页的待办里
+		首页不允许修改模板的内容
+		且每周会自动将其设置为
+		【未完成状态】
+		这里的云同步和首页的云同步是不冲突的
+		你可以分别将首页数据和模板数据上传
+		两者互不影响
+		快试试看吧~</text>
+	</div>
+</template>
+
+<script>
+	export default {
+		methods:{
+			back(){
+				const subNvue=uni.getSubNVueById('popup');
+				subNvue.hide();
+			}
+		}
+	}
+</script>
+
+<style>
+	.title{
+		text-align: center;
+		margin-bottom: 30rpx;
+	}
+	.main{
+		overflow: hidden;
+/* 		border: 1px solid #4c4; */
+		/* margin-top: 300rpx; */
+		padding-left: 45rpx;
+		padding-right: 45rpx;
+		padding-top: 50rpx;
+		padding-bottom: 80rpx;
+		border-radius: 30rpx;
+		background-color: rgba(0,0,0,0.7);
+	}
+	.text{
+		text-align: center;
+		font-size: 35rpx;
+		line-height: 60rpx;
+		/* border-radius: 30rpx; */
+		/* border: 1px solid #4c4; */
+		/* width: 500rpx; */
+		color: #ffffff;
+		/* height: 100vh;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		border: 1px solid #4c4; */
+	}
+</style>

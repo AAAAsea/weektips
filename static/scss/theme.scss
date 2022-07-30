@@ -1,0 +1,137 @@
+// 定义主题scss
+$white: #F8f8f8;
+// $white-bg: #efefef;
+$white-bg: #fff;
+$white-cont: #e8e8e8;
+
+$dark: #16171a;
+$dark-bg: #000000;
+$dark-cont: #16171a;
+$dark-list: #333437;
+$dark-buttom: #0F3460;
+$dark-text: #5d5d5d;
+
+	[data-theme='light']{
+		background: $white-bg;
+		color: $dark;
+		// height: 100vh ;
+
+		.content{
+			background: $white-cont;
+			color: #929293;
+			*{
+				color: $dark-text;
+			}
+		}
+		/* item针对我的、设置界面等列表项 */
+		.tab{
+			background: $white-bg;
+			color: $dark;
+			*{
+				background: $white-bg; 
+				color: $dark;
+			}
+		}
+		.bubble{
+			background-color: rgb(245,245,245);
+		}
+	/* 针对note界面 */
+		.note_item{
+			background-color: #F8F8F8;
+		}
+		.login{
+			background-color: white;
+		}
+	}
+	[data-theme='dark']{
+		background: $dark-bg;
+		color: $white;
+		// height: 100vh;		
+		/* main作为自己增设的根元素 */
+
+		.main{
+			background-color: $dark;
+			color: $white;
+		}
+		// button{
+		// 	background: #16213E;
+		// 	color: $white;
+		// }
+		textarea{
+			background: $dark;
+			color: $white;
+		}
+		scroll-view{
+			background: $dark;
+			color: $white;
+		}
+		/* item针对我的、设置界面等列表项 */
+		.tab{
+			background: $dark-bg;
+			color: $white;
+			*{
+				background: $dark-bg; 
+				color: $white;
+			}
+		}
+		/* 主要内容 */
+		.content{
+			background: $dark-cont;
+			color: #929293;
+			*{
+				color: #D8D8D8;
+			}
+		}
+		.bubble{
+			background-color: $dark-cont;
+		}
+		
+		/* 这里针对index界面 */
+		.boxl{
+			background: $dark;
+		}
+		.active{
+			background-color: #000000;
+		}
+		.left{
+			background: #000000;
+		}
+		.cell{
+			color: #000000;
+		}
+		/* 针对note界面 */
+
+		.weeklist{
+			background-color: $dark-bg;
+			.weeklistscroll{
+				background-color: $dark-bg;
+			}
+			.note_item{
+				background-color: $dark-cont;
+			}
+		}
+		.date_box{
+			scroll-view{
+				background: $dark;
+				color: $white;
+			}
+		}
+
+		/* 针对detail界面 */
+		.note_inputview{
+			background-color: $dark-bg;
+			.note_title{
+				background-color: $dark-bg;
+			}
+			.note_content{
+				background-color: $dark-bg;
+			}
+		}
+		.bottom-btn{
+			color: $white-cont;
+		}
+		
+		.login{
+			background-color: dark;
+		}
+	}

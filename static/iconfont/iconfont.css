@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3229909 */
+  src: url('/static/iconfont/iconfont.woff2?t=1647496054706') format('woff2'),
+       url('/static/iconfont/iconfont.woff?t=1647496054706') format('woff'),
+       url('/static/iconfont/iconfont.ttf?t=1647496054706') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 50px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock:before {
+  content: "\e67d";
+}
+
+.icon-bianjimoban:before {
+  content: "\e600";
+  font-size: 45px;
+}
+
+.icon-back:before{
+	content: "\e601";
+}
+
+.icon-note:before{
+	content: "\e709";
+}
+.icon-more:before{
+	content: "\e69b";
+}
+.icon-more2:before{
+	content: "\e73a";
+}
+.icon-sun::before{
+	content: "\e6c7";
+}
+.icon-moon::before{
+	content: "\e63a";
+}
+.icon-plus::before{
+	content: "\e605";
+}
+.icon-countdown::before{
+	content: "\e615";
+	font-size: 55px;
+}
+.icon-delete::before{
+	content: "\e6b4";
+}
+.icon-ok::before{
+	content: "\e622";
+}
+
+
+
+
